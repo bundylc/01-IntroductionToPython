@@ -1,4 +1,3 @@
-
 answer = 2 ** 5
 print(answer * 100)
 
@@ -22,8 +21,9 @@ print(answer * 100)
 ###############################################################################
 # DONE: 2.
 #   Immediately below this _TODO_, write code that:
-import math
-answer=(77+math.cos(2.75))
+    import math
+
+answer = (77 + math.cos(2.75))
 print(math.sqrt(answer))
 #     - Computes 77 plus the cosine of 2.75.
 #         HINT: You will need to import the   math  module (library).
@@ -39,7 +39,7 @@ print(math.sqrt(answer))
 #   Use as few or as many intermediate names as you feel appropriate.
 #   Run your code (fix errors as needed), then change the above _TODO_ to DONE.
 
-print(math.sqrt((41*88)+(4*math.cos(2))))
+    print(math.sqrt((41 * 88) + (4 * math.cos(2))))
 ###############################################################################
 
 

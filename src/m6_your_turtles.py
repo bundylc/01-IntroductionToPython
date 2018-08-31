@@ -31,7 +31,7 @@ import rosegraphics as rg
 
 bob = rg.SimpleTurtle('turtle')
 
-bob.pen = rg.Pen ('red',5)
+bob.pen = rg.Pen('red',5)
 
 bob.speed = 10
 
@@ -42,12 +42,12 @@ for x in range(20) :
     bob.draw_regular_polygon(10,100)
 
     bob.pen_up()
-    bob.forward(10)
-    bob.pen_down()
-    bob.right(90)
-    bob.pen_up()
-    bob.forward(10)
+    bob.backward(10)
     bob.pen_down()
     bob.left(90)
+    bob.pen_up()
+    bob.backward(10)
+    bob.pen_down()
+    bob.right(90)
 
     size = size - 25

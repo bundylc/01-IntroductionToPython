@@ -22,7 +22,33 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
 #          (so that the next movements will return to leaving a "trail")
 #     - Makes the SimpleTurtle's pen have color "green" and thickness 10.
 #     - Tells the SimpleTurtle to go 150 pixels straight DOWN.
-#
+
+import rosegraphics as rg
+
+bob = rg.SimpleTurtle ('turtle')
+
+bob.pen = rg.Pen('green',5)
+
+bob.speed = 200
+
+size = 300
+
+for x in range(25):
+
+    bob.draw_regular_polygon(5,200)
+
+    bob.pen_up()
+    bob.backward(10)
+    bob.pen_down()
+    bob.left(90)
+    bob.pen_up()
+    bob.backward(10)
+    bob.pen_down()
+    bob.right(90)
+
+    size = size - 100
+
+
 # Don't forget to:
 #     - import rosegraphics and construct a TurtleWindow
 #          at the BEGINNING of your code, and to
