@@ -10,7 +10,7 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
 ###############################################################################
 
 ###############################################################################
-# TODO: 2.
+# DONE: 2.
 #   You should have RUN the  m5e_loopy_turtles  module and READ its code.
 #   (Do so now if you have not already done so.)
 #
@@ -27,5 +27,27 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
 #
 #   Don't forget to COMMIT-and-PUSH when you are done with this module.
 ###############################################################################
-for size in range(10):
-    print(size)
+import rosegraphics as rg
+
+bob = rg.SimpleTurtle('turtle')
+
+bob.pen = rg.Pen ('red',5)
+
+bob.speed = 10
+
+size = 600
+
+for x in range(20) :
+
+    bob.draw_regular_polygon(10,100)
+
+    bob.pen_up()
+    bob.forward(10)
+    bob.pen_down()
+    bob.right(90)
+    bob.pen_up()
+    bob.forward(10)
+    bob.pen_down()
+    bob.left(90)
+
+    size = size - 25
