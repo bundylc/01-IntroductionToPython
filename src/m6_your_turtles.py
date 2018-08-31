@@ -2,10 +2,10 @@
 Your chance to explore Loops and Turtles!
 
 Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
+         their colleagues and Landon Bundy.
 """
 ###############################################################################
-# TODO: 1.
+# DONE: 1.
 #   On Line 5 above, replace  PUT_YOUR_NAME_HERE  with your own name.
 ###############################################################################
 
@@ -19,7 +19,7 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
 #     2. Each rg.SimpleTurtle object draws something
 #          (by moving, using its rg.Pen).  ANYTHING is fine!
 #     3. Each rg.SimpleTurtle moves inside a LOOP.
-#
+
 #   Be creative!  Strive for way-cool pictures!  Abstract pictures rule!
 #
 #   If you make syntax (notational) errors, no worries -- get help
@@ -27,3 +27,5 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
 #
 #   Don't forget to COMMIT-and-PUSH when you are done with this module.
 ###############################################################################
+for size in range(10):
+    print(size)
