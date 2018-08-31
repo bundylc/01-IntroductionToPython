@@ -48,7 +48,6 @@ for x in range(25):
 
     size = size - 100
 
-
 # Don't forget to:
 #     - import rosegraphics and construct a TurtleWindow
 #          at the BEGINNING of your code, and to
