@@ -57,7 +57,7 @@ print(2 ** 0.5)
 
 
 ###############################################################################
-# TODO: 5.
+# DONE: 5.
 #   Every object has a TYPE and a VALUE.  For example,
 #   for the object that is computed by  math.sqrt(2):
 #      Its TYPE is float  (which is shorthand for "floating point number")
@@ -80,18 +80,31 @@ print(type(3.14))
 #      -- Write code of the form   print(type(BLAH)).
 #      -- RUN the code to LEARN its TYPE.
 
-#       "hello"
-#       'hello'
-#       "a b c"
-#       3 + 3
-#       "3" + "3"
-#       2 ** 100
-#       2.0 ** 100
-#       math.sin(8)
-#       math.sin
-#       print
+#      word
+print(type("hello"))
+# string
+print(type('hello'))
+# string
+print(type("a b c"))
+# float
+print(type(3 + 3))
+# integer
+print(type("3" + "3"))
+
+#       integer
+print(type(2 ** 100))
+#       decimal
+print(type(2.0 ** 100))
 #       math
-#       'math'
+print(type(math.sin(8)))
+#       math
+print(type(math.sin))
+#       float
+print(type(print))
+#       string
+print(type(math))
+#       string
+print(type('math'))
 #
 # After you have written and run the code to learn the TYPE
 # of each of the above, change the above _TODO_ to DONE.
