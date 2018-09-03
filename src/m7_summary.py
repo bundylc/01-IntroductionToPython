@@ -42,6 +42,7 @@ joe.pen.thickness = 10
 joe.right(180)
 joe.forward(150)
 
+
 window.close_on_mouse_click()
 
 
