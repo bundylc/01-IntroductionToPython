@@ -5,7 +5,7 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
          their colleagues and Landon Bundy.
 """
 ########################################################################
-# DONE: 1.
+#  DONE: 1.
 #   On Line 5 above, replace  PUT_YOUR_NAME_HERE  with your own name.
 ########################################################################
 
@@ -25,28 +25,11 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
 
 import rosegraphics as rg
 
-bob = rg.SimpleTurtle ('turtle')
+joe = rg.SimpleTurtle
 
-bob.pen = rg.Pen('green',5)
+joe.pen = rg.Pen('blue', 10)
 
-bob.speed = 200
 
-size = 300
-
-for x in range(25):
-
-    bob.draw_regular_polygon(5,200)
-
-    bob.pen_up()
-    bob.backward(10)
-    bob.pen_down()
-    bob.left(90)
-    bob.pen_up()
-    bob.backward(10)
-    bob.pen_down()
-    bob.right(90)
-
-    size = size - 100
 
 # Don't forget to:
 #     - import rosegraphics and construct a TurtleWindow

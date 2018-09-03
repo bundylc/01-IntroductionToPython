@@ -27,27 +27,24 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
 #
 #   Don't forget to COMMIT-and-PUSH when you are done with this module.
 ###############################################################################
+
 import rosegraphics as rg
 
 bob = rg.SimpleTurtle('turtle')
 
-bob.pen = rg.Pen('red',5)
+bob.pen = rg.Pen('blue', 5)
 
 bob.speed = 10
 
-size = 600
+size = 200
 
-for x in range(20) :
+for x in range(19):
+        bob.draw_regular_polygon(10, 100)
 
-    bob.draw_regular_polygon(10,100)
+        bob.pen_up()
+        bob.backward(10)
+        bob.left(76)
+        bob.pen_down()
+        bob.backward(10)
 
-    bob.pen_up()
-    bob.backward(10)
-    bob.pen_down()
-    bob.left(90)
-    bob.pen_up()
-    bob.backward(10)
-    bob.pen_down()
-    bob.right(90)
-
-    size = size - 25
+        size = size - 12
